@@ -1,0 +1,639 @@
+@import '_fonts'
+/** Header **/
+body
+	font-family: 'Poppins Regular', sans-serif
+
+.container
+	width: 95%
+	padding: 0 15px
+	margin: 0 auto
+.header
+	padding: 33px 0 66px 0
+	background: #F4F9FF	
+	&__wrap
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__logo
+		
+	&__heading
+		color: #04135D
+	&__burger
+		display: none	
+	&__nav
+		display: flex
+	&__list 
+		display: flex
+	&__link
+		font-size: 16px
+		line-height: 24px
+		color:#8B8D90
+		margin-right: 40px
+		transition: all .5s
+		&:hover
+			color:#363636
+	&__login
+
+.logo-heading
+	font-size: 26px
+	line-height: 39px
+	+bold
+
+.login
+	&__link
+		color:#8B8D90
+		margin-left: 45px
+		font-size: 16px
+		line-height: 24px
+		transition: all .5s
+		&:hover
+			color:#363636
+		&::before
+			content: ''
+			width: 29px
+			height: 0
+			left: 0
+			top: 0
+			border: 1.1px solid #D7DBE0
+			transform: rotate(90deg)
+			margin-right: 20px
+	&__btn
+		font-size: 16px
+		line-height: 24px
+		margin-left: 20px
+		padding: 10px 20px
+		color: #4DAAF8
+		background: #FFFFFF
+		border-radius: 97px
+		transition: all .5s
+		&:hover
+			background: #f5f5f5
+
+/** HERO **/
+
+.hero
+	padding-bottom: 30px
+	background: #F4F9FF
+	&__wrap
+		display: flex
+		align-items: center
+	&__image 
+		flex: 0 1 50%
+		max-width: 100%
+	&__body
+		flex: 0 1 50%
+	&__subtitle
+		font-weight: 600
+		color: #39A1F7
+		font-size: 24px
+	&__title
+		+semibold
+		margin-top: 15px
+		width: 561px
+		line-height: 66px
+		font-size: 60px
+	&__text
+		margin-top: 20px
+		width: 553px
+		font-size: 18px
+		line-height: 35px
+		color: #787A80
+	&__btn
+		display: inline-block
+		padding: 20px 20px 20px 30px
+		margin-top: 40px
+		background: #39A1F7
+		border-radius: 67px
+		margin-right: 30px
+	&__link
+		font-weight: 600
+		color: #fff
+	&__span
+		color: #747579
+		font-weight: 600
+
+.btn
+	&__icon
+		padding-left: 20px
+	&__span
+		color: #39A1F7
+		font-weight: 600
+
+/** Description **/
+
+.description
+	background: #F4F9FF
+	padding-bottom: 50px
+	&__wrap
+		display: flex
+		align-items: center
+	&__body
+		flex: 0 1 45%
+	&__title	
+			width: 307px
+	&__image
+		flex: 0 1 55%
+		max-width: 100%
+		position: relative
+		/** &::after
+			position: absolute
+			content: url('../img/description/first-image-figure.png')
+			display: block
+			width: 109px
+			height: 109px
+			left: 506px
+			top: 202px **/
+	&__img
+		flex: 0 1 50%
+		max-width: 100%		
+.subtitle
+	color: #39A1F7
+	font-weight: normal
+	font-size: 24px
+	line-height: 36px
+
+.title 
+	margin-top: 12px
+	font-size: 36px
+	line-height: 54px
+	+semibold
+.second-title
+	width: 548px
+.text 
+	margin-top: 20px
+	width: 486px
+	font-size: 18px
+	line-height: 35px
+	color: #6A6C72
+.btn
+	display: inline-block
+	margin-top: 40px
+	padding: 12px 30px
+	background: rgba(57, 161, 247, 0.1)
+	border: 1px solid #39A1F7
+	box-sizing: border-box
+	border-radius: 53px
+	color: #39A1F7
+	+bold
+
+
+/** About **/
+.about
+	padding-top: 150px
+	padding-bottom: 200px
+	&__wrap
+		display: flex
+		align-items: center
+	&__first
+		flex: 0 1 50%
+		max-width: 100%
+	&__second
+		flex: 0 1 50%
+		max-width: 100%
+
+
+/** Download **/
+
+.download
+	background: #F4F9FF
+	padding-top: 60px
+	padding-bottom: 150px
+	position: relative
+	&__wrap
+		position: relative
+	&__body
+		flex: 0 1 50%
+	&__image
+		flex: 0 1 50%
+		position: absolute
+	
+	&__title
+		width: 592px
+	&__icons
+		margin-top: 30px
+	&__icon
+		margin-right: 30px	
+
+
+/** Footer **/
+
+.footer
+	padding-top: 250px
+	padding-bottom: 50px
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__body
+		width: 30%
+	&__heading
+		color: #303B45	
+	&__title
+		font-weight: 600
+		font-size: 35px
+		line-height: 52px
+		width: 344px
+		color: #0C173E
+		margin-top: 18px
+	&__input
+
+	&-nav
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-weight: wrap
+		margin-right: 95px
+		&__title
+			display: inline-block
+			color: #0C173E
+			font-weight: 600
+			font-size: 19px
+			line-height: 28px
+			text-transform: uppercase
+			margin-bottom: 20px
+	&__list
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+	&__link
+		display: inline-block
+		font-weight: 500
+		font-size: 14px
+		line-height: 21px
+		color: #717171
+		margin-bottom: 20px
+		transition: all 0.3s
+		&:hover
+			color:#363636
+.nav__wrap
+	display: flex				
+.input
+	padding: 12px 30px
+	border: 1px solid #D8D8D8
+	box-sizing: border-box
+	border-radius: 45px
+	margin-top: 40px
+	&__arrow
+		border: 1px solid black
+		background: #000
+		border-radius: 100%
+		padding: 10px
+		position: absolute
+		margin-left: -35px
+		margin-top: 42px
+.resources
+	margin-right: 95px
+
+.pay
+	margin-right: 95px
+
+@media screen and ( max-width: 2500px )
+	.container
+		width: 80%
+		padding: 0 15px
+		margin: 0 auto
+
+@media screen and ( max-width: 1440px )
+	.container
+		width: 95%
+		padding: 0 15px
+		margin: 0 auto
+
+@media screen and ( max-width: 1200px )
+	/** HERO **/
+	.hero
+		&__subtitle
+			font-size: 20px
+		&__title
+			margin-top: 11px
+			width: 450px
+			line-height: 53px
+			font-size: 50px
+		&__text
+			margin-top: 15px
+			width: 450px
+			font-size: 17px
+			line-height: 35px
+		&__btn
+			padding: 15px 15px 15px 25px
+			margin-top: 30px
+			font-size: 15px
+	.subtitle
+		font-size: 21px
+		line-height: 25px
+	.title 
+		margin-top: 10px
+		font-size: 30px
+		line-height: 40px
+	.second-title
+		width: 450px
+	.text 
+		margin-top: 10px
+		width: 450px
+		font-size: 16px
+		line-height: 30px
+		/** DESCRIPTION **/
+	.description
+		padding-bottom: 35px
+		&__wrap_margin
+			margin-top: 20px
+		&__image
+			flex: 0 1 60%
+			max-width: 100%
+		&__img
+			flex: 0 1 40%
+			margin-right: 90px
+			/** ABOUT **/
+	.about
+		padding-top: 100px
+		padding-bottom: 140px
+			/** DOWNLOAD **/
+	.download
+		padding-top: 60px
+		padding-bottom: 90px
+		&__title
+			width: 560px
+			/** FOOTER **/
+	.footer
+		padding-top: 120px
+		padding-bottom: 40px
+		&__wrap
+			display: inline
+			flex-wrap: wrap
+		&__body
+			width: 100%
+		&__nav
+			margin-right: 0
+			width: 100%	
+		&__title
+			width: 430px
+			margin-top: 0
+	.input
+		margin-top: 0
+		&__arrow
+			margin-top: 0	
+	.body__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.nav
+		&__wrap
+			width: 100%
+			margin-top: 25px
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between	
+
+@media screen and ( max-width: 992px)
+	/** HEADER **/
+	.header
+		&__link
+			font-size: 14px
+			margin-right: 20px
+			&_m
+				margin-right: 5px
+	.login
+		&__link
+			margin-left: 15px
+			font-size: 14px
+	.hero
+		padding-bottom: 25px
+		&__image 
+			flex: 0 1 55%
+		&__body
+			flex: 0 1 45%
+		&__subtitle
+			font-size: 17px
+		&__title
+			margin-top: 10px
+			width: 405px
+			line-height: 50px
+			font-size: 45px
+		&__text
+			margin-top: 12px
+			width: 380px
+			font-size: 16px
+			line-height: 30px
+		&__btn
+			padding: 13px 13px 13px 22px
+			font-size: 14px
+	/** Description **/		
+	.subtitle
+		font-size: 20px
+		line-height: 25px
+	.title 
+		font-size: 27px
+		line-height: 37px
+		width: 240px
+	.second-title
+		width: 400px
+	.text 
+		margin-top: 10px
+		width: 360px
+		font-size: 15px
+		line-height: 30px
+		/** DESCRIPTION **/
+	.description
+		padding-bottom: 35px
+		&__wrap_margin
+			margin-top: 20px
+		&__image
+			flex: 0 1 60%
+			max-width: 100%
+			& img
+				max-width: 110%
+		&__img
+			flex: 0 1 70%
+			& img
+				max-width: 110%
+			/** ABOUT **/
+	.about
+		padding-top: 50px
+		padding-bottom: 50px
+		&__first
+			flex: 0 1 45%
+			& img
+				max-width: 110%
+		&__second
+			flex: 0 1 55%
+			& img
+				max-width: 110%
+			/** DOWNLOAD **/
+	.download
+		padding-top: 60px
+		padding-bottom: 80px
+		&__title
+			width: 450px
+			/** FOOTER **/
+	.footer
+		padding-top: 80px
+		padding-bottom: 40px
+		&__title
+			display: none
+
+@media screen and ( max-width: 810px)
+	.header
+		&__nav
+			display: none
+		&__burger
+			display: block
+			position: relative !important
+			width: 30px !important
+			height: 20px
+			&.active::before
+				transform: rotate(45deg)
+			&.active::after
+				transform: rotate(-45deg)
+			& span
+				background: #000
+				position: absolute
+				left: 0
+				width: 25px
+				height: 2px
+				bottom: 5px
+				top: 7px
+			&::before
+				content: ''
+				background: #000
+				position: absolute
+				width: 25px !important
+				height: 2px
+				left: 0
+				bottom: 9px
+				top: 2px
+			&::after
+				content: ''
+				background: #000
+				position: absolute
+				width: 25px
+				height: 2px
+				left: 0
+				top: 11px
+				bottom: 3px
+		
+@media screen and ( max-width: 808px)
+	/** HEADER **/
+	.hero
+		padding-bottom: 25px
+		&__image 
+			flex: 0 1 55%
+		&__body
+			flex: 0 1 45%
+		&__subtitle
+			font-size: 17px
+		&__title
+			margin-top: 10px
+			width: 405px
+			line-height: 50px
+			font-size: 45px
+		&__text
+			margin-top: 12px
+			width: 380px
+			font-size: 16px
+			line-height: 30px
+		&__btn
+			padding: 13px 13px 13px 22px
+			font-size: 14px
+	/** Description **/		
+	.subtitle
+		font-size: 20px
+		line-height: 25px
+	.title 
+		font-size: 27px
+		line-height: 37px
+		width: 240px
+	.second-title
+		width: 400px
+	.text 
+		margin-top: 10px
+		width: 360px
+		font-size: 15px
+		line-height: 30px
+		/** DESCRIPTION **/
+	.description
+		padding-bottom: 35px
+		&__wrap_margin
+			margin-top: 20px
+		&__image
+			flex: 0 1 60%
+			max-width: 100%
+			& img
+				max-width: 110%
+		&__img
+			flex: 0 1 70%
+			& img
+				max-width: 115%
+			/** ABOUT **/
+	.about
+		padding-top: 40px
+		padding-bottom: 40px
+		&__first
+			flex: 0 1 45%
+			& img
+				max-width: 110%
+		&__second
+			flex: 0 1 55%
+			& img
+				max-width: 110%
+			/** DOWNLOAD **/
+	.download
+		padding-top: 50px
+		padding-bottom: 60px
+		&__title
+			font-size: 25px
+			width: 400px
+			/** FOOTER **/
+	.footer
+		padding-top: 50px
+
+
+@media screen and ( max-width: 768px)
+	.hero
+		padding-bottom: 60px
+		background: #F4F9FF
+		&__wrap
+			display: flex
+			flex-direction: column
+			align-items: center
+		&__image 
+			flex: 0 1 100%
+			max-width: 100%
+		&__body
+			flex: 0 1 100%		
+	.description
+		background: #F4F9FF
+		padding-bottom: 50px
+		&__wrap
+			display: flex
+			flex-direction: column
+			align-items: center
+		&__body
+			flex: 0 1 100%
+			order: 0
+		&__image
+			flex: 0 1 100%
+			max-width: 100%
+			order: -1
+			margin-right: 50px
+		&__img
+			flex: 0 1 100%
+			max-width: 100%
+			margin-left: 50px
+			margin-bottom: 10px
+			& img
+				max-width: 90%
+	.about
+		padding-bottom: 30px
+		&__wrap
+			display: flex
+			flex-direction: column
+			align-items: center
+		&__first
+			flex: 0 1 100%
+			max-width: 90%
+			& img
+				max-width: 100%
+		&__second
+			flex: 0 1 100%
+			max-width: 90%
+			& img
+				max-width: 100%
