@@ -9,7 +9,7 @@ body
 	margin: 0 auto
 .header
 	padding: 33px 0 66px 0
-	background: #F4F9FF	
+	background: #F4F9FF !important	
 	&__wrap
 		display: flex
 		align-items: center
@@ -473,44 +473,88 @@ body
 			display: none
 
 @media screen and ( max-width: 810px)
+	body.lock
+		overflow: hidden
+	.login
+		display: none
 	.header
+		width: 100%
+		top: 0
+		left: 0
+		z-index: 20
+		height:80px
+		box-shadow: 0 2px 1px 0 rgba(0,0,0,.1)
+		display: flex
+		padding: 5px 0
+		align-items: center
+		justify-content: space-between
 		&__nav
-			display: none
-		&__burger
 			display: block
-			position: relative !important
-			width: 30px !important
-			height: 20px
+			position: absolute
+			top: 55px
+			left: 0
+			box-shadow: #ccc
+			width: 100%
+			box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17)
+			right: -100%
+			transition: all 0.4s ease
+		&__list
+			display: block
+			position: fixed
+			top: -100%
+			right: 0
+			overflow: auto /*для того, чтобы меню скроллилось в случае, если оно не влезает на экран*/
+			background-color: #eef2f6
+			transition: all 0.4s ease 0s
+			&.active
+				top: 75px
+			& li
+				margin: 30px 0px 30px 35px
+				font-size: 14px
+		&__burger
+			position: relative /* задаем относительное позиционирование */
+			width: 40px /* определяем размеры блока */
+			height: 35px
+			display: block
+			margin-left: 10px
+			&.active
+				right: 0
+			&.active span
+				opacity:0
+				transition: 0.5s
 			&.active::before
-				transform: rotate(45deg)
+				transform: rotate(38deg)
+				top: 19px
+				transition: 0.4s
 			&.active::after
-				transform: rotate(-45deg)
+				transform: rotate(-38deg)
+				bottom: 19px
+				transition: 0.4s
 			& span
-				background: #000
 				position: absolute
-				left: 0
-				width: 25px
-				height: 2px
-				bottom: 5px
-				top: 7px
+				height: 3px
+				width: 100%
+				position: absolute
+				background: #000
+				margin: 0 auto
+				bottom: 20px
 			&::before
 				content: ''
-				background: #000
+				height: 3px
+				width: 100%
 				position: absolute
-				width: 25px !important
-				height: 2px
-				left: 0
-				bottom: 9px
-				top: 2px
+				background: #000
+				margin: 0 auto
+				top: 4px
 			&::after
 				content: ''
-				background: #000
+				height: 3px
+				width: 100%
 				position: absolute
-				width: 25px
-				height: 2px
-				left: 0
-				top: 12px
-				bottom: 3px
+				background: #000
+				margin: 0 auto
+				top: 20px
+
 		
 @media screen and ( max-width: 808px)
 	/** HEADER **/
