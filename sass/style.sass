@@ -286,6 +286,8 @@ body
 .pay
 	margin-right: 95px
 
+/** ADAPTIVE **/	
+
 @media screen and ( max-width: 2500px )
 	.container
 		width: 80%
@@ -507,7 +509,7 @@ body
 				width: 25px
 				height: 2px
 				left: 0
-				top: 11px
+				top: 12px
 				bottom: 3px
 		
 @media screen and ( max-width: 808px)
@@ -637,3 +639,70 @@ body
 			max-width: 90%
 			& img
 				max-width: 100%
+
+@media screen and ( max-width: 440px)
+	/** HEADER **/
+	.hero
+		padding-bottom: 25px
+		&__image 
+			flex: 0 1 100%
+		&__body
+			flex: 0 1 100%
+		&__subtitle
+			font-size: 15px
+		&__title
+			margin-top: 10px
+			width: 350px
+			line-height: 50px
+			font-size: 35px
+		&__text
+			margin-top: 12px
+			width: 330px
+			font-size: 15px
+			line-height: 30px
+		&__btn
+			width: auto
+			padding: 16px 90px 15px 90px
+			font-size: 15px
+			margin-bottom: 15px
+		&__span
+			display: block
+			text-align: center		
+	.subtitle
+		font-size: 17px
+		line-height: 20px
+	.title 
+		font-size: 22px
+		line-height: 37px
+		width: 250px
+	.second-title
+		width: 330px
+	.text 
+		margin-top: 10px
+		width: 345px
+		font-size: 15px
+		line-height: 30px
+	.btn
+		margin-top: 25px
+		/** DESCRIPTION **/
+	.description
+		padding-bottom: 35px
+		&__img
+			margin-left: 0
+			/** ABOUT **/
+	.about
+		padding-top: 40px
+		padding-bottom: 50px
+			/** DOWNLOAD **/
+	.download
+		padding-top: 60px
+		padding-bottom: 60px
+		&__title
+			font-size: 20px
+			width: 310px
+			/** FOOTER **/
+	.footer
+		padding-top: 50px
+		padding-bottom: 30px
+		&__input
+			display: none	
