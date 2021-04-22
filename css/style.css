@@ -352,11 +352,11 @@ body {
 .input__arrow {
   border: 1px solid black;
   background: #000;
-  border-radius: 100%;
+  border-radius: 50%;
   padding: 10px;
   position: absolute;
-  margin-left: -35px;
-  margin-top: 42px;
+  margin-left: -39px;
+  margin-top: -26px !important;
 }
 
 .resources {
